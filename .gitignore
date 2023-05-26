@@ -1,0 +1,44 @@
+/vendor/
+vendor
+/config/
+config
+.env
+/.env
+yarn-error.log
+/public/
+/config
+composer.lock
+composer.json
+/composer.lock
+/composer.json
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+/app/Http/Kernel.php
+/app/Providers
+/app/Exceptions
+/app/Helpers
+config/database.php
+/config/database.php
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+/storage
+storage
+storage/logs
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+
+
+config/session.php
+
+app/Providers/AuthServiceProvider.php
