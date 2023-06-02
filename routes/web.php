@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CsvController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -7,10 +8,12 @@ Route::get('/', function () {
 });
 
 Route::get('view_checker',[ProductController::class,'view_checker']);
+Route::get('index',[ProductController::class,'index']);
+Route::get('liftingplan',[ProductController::class,'liftingplan']);
+Route::get('importliftingplan',[ProductController::class,'importliftingplan']);
 ////////////////////////----SIDEBAR-----
 Route::get('calander',[ProductController::class,'calander']);
 Route::get('email',[ProductController::class,'email']);
-Route::get('index',[ProductController::class,'index']);
 Route::get('productlist',[ProductController::class,'productlist']);
 Route::get('addproduct',[ProductController::class,'addproduct']);
 Route::get('productdetails',[ProductController::class,'productdetails']);
@@ -59,3 +62,10 @@ Route::get('taxrates',[ProductController::class,'taxrates']);
 ////////////------------HEADER-----
 Route::get('activities',[ProductController::class,'activities']);
 Route::get('profile',[ProductController::class,'profile']);
+
+
+/****
+    csv formart related routes
+*/
+Route::get('download_lifting_plan',[CsvController::class,'download_lifting_plan']);
+

@@ -13,10 +13,24 @@
 <ul>
 <li><a href="{{ url('calander') }}">Calendar</a></li>
 <li><a href="{{ url('email')}}">Email</a></li>
+<li><a href="{{ url('liftingplan')}}">Lifting Plan</a></li>
 </ul>
 </li>
 </ul>
 </li>
+
+<li class="submenu-open">
+    <h6 class="submenu-hdr">Stock</h6>
+    <ul>
+        <li>
+            <a href="{{ url('liftingplan') }}">Lifting Plan</a>
+        </li>
+        <li>
+            <a href="{{url('importliftingplan')}}">Import Lifting Plan</a>
+        </li>
+    </ul>
+</li>
+
 <li class="submenu-open">
 <h6 class="submenu-hdr">Products</h6>
 <ul>
