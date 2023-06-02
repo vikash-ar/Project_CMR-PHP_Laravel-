@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function view_checker(){
+    public function view_checker(Request $request){
+// dd($request);
          return view('components.dashboard.index');
     }
     public function calander(){
@@ -201,6 +202,21 @@ class ProductController extends Controller
     public function profile(){
 
         return view('components.layouts.header.profile');
+   }
+
+    public function liftingplan(){
+
+        return view('components.stock.liftingplan');
+   }
+
+    public function importliftingplan(){
+
+        return view('components.stock.importliftingplan');
+   }
+
+    public function addnewliftingplan(){
+
+        return view('components.stock.addnewliftingplan');
    }
 
 

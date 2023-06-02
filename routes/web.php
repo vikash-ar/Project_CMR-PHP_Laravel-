@@ -1,10 +1,11 @@
 <?php
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\LiftingPlanController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('view_checker',[ProductController::class,'view_checker']);
 ////////////////////////----SIDEBAR-----
@@ -59,3 +60,17 @@ Route::get('taxrates',[ProductController::class,'taxrates']);
 ////////////------------HEADER-----
 Route::get('activities',[ProductController::class,'activities']);
 Route::get('profile',[ProductController::class,'profile']);
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+///////////-----------------LIFTING_PLAN-----------
+// Route::get('liftingplan',[ProductController::class,'liftingplan']);
+Route::get('importliftingplan',[ProductController::class,'importliftingplan']);
+// Route::get('addnewliftingplan',[ProductController::class,'addnewliftingplan']);
+// Route::resource('liftingplan',[LiftingPlanController::class]);
+
+
+Route::resource('liftingplan','LiftingPlanController');
+
