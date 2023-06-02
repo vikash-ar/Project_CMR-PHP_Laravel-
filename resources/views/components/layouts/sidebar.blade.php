@@ -78,6 +78,76 @@
                                     Purchases</span></a></li>
                         <li><a href="{{ url('purchasesorderreport') }}"><i data-feather="file-minus"></i><span>Purchase
                                     Order</span></a></li>
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="submenu-open">
+<h6 class="submenu-hdr">Main</h6>
+<ul>
+<li class="active">
+<a href="{{url('index')}}"><i data-feather="grid"></i><span>Dashboard</span></a>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><i data-feather="smartphone"></i><span>Application</span><span class="menu-arrow"></span></a>
+<ul>
+<li><a href="{{ url('calander') }}">Calendar</a></li>
+<li><a href="{{ url('email')}}">Email</a></li>
+<li><a href="{{ url('liftingplan')}}">Lifting Plan</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="submenu-open">
+    <h6 class="submenu-hdr">Stock</h6>
+    <ul>
+        <li>
+            <a href="{{ url('liftingplan') }}">Lifting Plan</a>
+        </li>
+        <li>
+            <a href="{{url('importliftingplan')}}">Import Lifting Plan</a>
+        </li>
+    </ul>
+</li>
+
+<li class="submenu-open">
+<h6 class="submenu-hdr">Products</h6>
+<ul>
+<li><a href="{{url('productlist')}}"><i data-feather="box"></i><span>Products</span></a></li>
+<li><a href="{{url('addproduct')}}"><i data-feather="plus-square"></i><span>Create Product</span></a></li>
+<li><a href="{{url('categorylist')}}"><i data-feather="codepen"></i><span>Category</span></a></li>
+<li><a href="{{url('brandlist')}}"><i data-feather="tag"></i><span>Brands</span></a></li>
+<li><a href="{{url('subcategorylist')}}"><i data-feather="speaker"></i><span>Sub Category</span></a></li>
+<li><a href="{{url('importproduct')}}"><i data-feather="minimize-2"></i><span>Import Products</span></a></li>
+</ul>
+</li>
+<li class="submenu-open">
+<h6 class="submenu-hdr">Sales</h6>
+<ul>
+<li><a href="{{url('saleslist')}}"><i data-feather="shopping-cart"></i><span>Sales</span></a></li>
+<li><a href="{{url('invoicereport')}}"><i data-feather="file-text"></i><span>Invoices</span></a></li>
+<li><a href="{{url('pos')}}"><i data-feather="hard-drive"></i><span>POS</a></li>
+<li class="submenu">
+<a href="javascript:void(0);"><i data-feather="shuffle"></i><span>Transfer</span><span class="menu-arrow"></span></a>
+<ul>
+<li><a href="{{url('transferlist')}}">Transfer List</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><i data-feather="corner-up-left"></i><span>Return</span><span class="menu-arrow"></span></a>
+<ul>
+<li><a href="{{url('salesreturn')}}">Sales Return</a></li>
+<li><a href="{{url('purchasereturnlist')}}">Purchase Return</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="submenu-open">
+<h6 class="submenu-hdr">Purchases</h6>
+<ul>
+<li><a href="{{url('purchases')}}"><i data-feather="shopping-bag"></i><span>Purchases</span></a></li>
+<li><a href="{{url('importpurchases')}}"><i data-feather="minimize-2"></i><span>Import Purchases</span></a></li>
+<li><a href="{{url('purchasesorderreport')}}"><i data-feather="file-minus"></i><span>Purchase Order</span></a></li>
 
                     </ul>
                 </li>

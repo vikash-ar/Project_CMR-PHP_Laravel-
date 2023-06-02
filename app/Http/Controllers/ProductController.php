@@ -10,6 +10,12 @@ class ProductController extends Controller
 // dd($request);
          return view('components.dashboard.index');
     }
+    public function liftingplan(){
+         return view('components.layouts.liftingplan');
+    }
+    public function importliftingplan(){
+         return view('components.stock.importliftingplan');
+    }
     public function calander(){
 
          return view('components.products.calander');
